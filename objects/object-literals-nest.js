@@ -12,3 +12,8 @@ var flight = {
     city: "Los Angeles"
   }
 }
+
+typeof flight.number
+typeof flight.status
+typeof flight.arrival
+typeof flight.manifest
