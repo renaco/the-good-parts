@@ -10,7 +10,7 @@ if (typeof Object.create !== 'function') {
     var F = function () {};
     F.prototype = o;
     return new F();
-  }
+  };
 }
 
 var another_stooge = Object.create(stooge);
@@ -22,4 +22,4 @@ another_stogge.nickname = 'Moe';
 //add new property to dynamic relationship
 
 stooge.profession = 'actor';
-another_stogge.profession    // actor
+another_stogge.profession;    // actor

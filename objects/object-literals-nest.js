@@ -11,9 +11,15 @@ var flight = {
     time: "2004-09-23 10:42",
     city: "Los Angeles"
   }
-}
+};
 
-typeof flight.number
-typeof flight.status
-typeof flight.arrival
-typeof flight.manifest
+flight.equipment = {
+  model: 'Being 777'
+};
+
+flight.status = 'overdue';
+
+// typeof flight.number;
+// typeof flight.status;
+// typeof flight.arrival;
+// typeof flight.manifest;
