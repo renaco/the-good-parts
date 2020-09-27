@@ -1,9 +1,9 @@
 var myMammal = {
   name : 'Herb the Mammal',
-  get_name : function() {
+  get_name: function() {
     return this.name;
   },
-  says : function() {
+  says: function() {
     return this.saying || '';
   }
 };
@@ -11,7 +11,7 @@ var myMammal = {
 var myCat = Object.create(myMammal);
 myCat.name = 'Mishu';
 myCat.saying = 'meow';
-myCat.purr = function (n) {
+myCat.purr = function(n) {
   var i, s = '';
   for (i = 0; i < n; i += 1) {
     if(s) {
@@ -22,6 +22,9 @@ myCat.purr = function (n) {
   return s;
 };
 
-myCat.get_name = function () {
+myCat.get_name = function() {
   return this.says() + ' ' + this.name + ' ' + this.says();
 };
+
+console.log(myCat.get_name);
+console.log(myCat);

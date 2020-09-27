@@ -19,7 +19,9 @@ flight.equipment = {
 
 flight.status = 'overdue';
 
-// typeof flight.number;
-// typeof flight.status;
-// typeof flight.arrival;
-// typeof flight.manifest;
+console.log(typeof flight.number); // 'number'
+console.log(typeof flight.status); // 'string'
+console.log(typeof flight.arrival); // 'object'
+console.log(typeof flight.manifest); // 'undefined'
+
+exports.flight;

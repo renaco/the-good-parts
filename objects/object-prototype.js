@@ -19,7 +19,8 @@ another_stooge['first-name'] = 'Harry';
 another_stogge['middle-name'] = 'Moses';
 another_stogge.nickname = 'Moe';
 
-//add new property to dynamic relationship
+// add new property to dynamic relationship
 
 stooge.profession = 'actor';
-another_stogge.profession;    // actor
+
+console.log(another_stogge.profession); // actor

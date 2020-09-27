@@ -1,13 +1,10 @@
-typeof flight.number    //  'number'
-typeof flight.status    //  'string'
-typeof flight.arrival   //  'object'
-typeof flight.manifest  //  'undefined'
+var flight = require('./object-literals-nest');
 
-typeof flight.toString  //  'function'
-typeof flight.constructor  //  'function'
+console.log(typeof flight.toString); // 'function'
+console.log(typeof flight.constructor); // 'function'
 
+// using hasOwnProperty
+// https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
 
-// hasOwnProperty
-
-typeof.hasOwnProperty('number')   // true
-typeof.hasOwnProperty('constructor')  //false
+console.log(flight.hasOwnProperty('number')) // true
+console.log(flight.hasOwnProperty('constructor')) //false
